@@ -302,13 +302,13 @@ export default function Home() {
             </h2>
             <div className="prose prose-lg prose-invert max-w-none">
               <p className="text-xl text-gray-300 mb-6">
-                Esports jobs encompass all career opportunities within the competitive gaming industry.
+                <Link href="/" className="text-cyan-400 hover:underline">Esports jobs</Link> encompass all career opportunities within the competitive gaming industry.
                 From professional players competing for million-dollar prize pools to content creators building
                 massive audiences, the esports industry offers diverse career paths for gaming enthusiasts.
               </p>
               <p className="text-lg text-gray-400 mb-6">
                 The esports industry has transformed from basement LAN parties into a $1.8 billion global
-                phenomenon. This explosive growth has created thousands of job opportunities that did not exist
+                phenomenon, according to data from <a href="https://ukie.org.uk" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline">UKIE</a>, the UK games industry trade body. This explosive growth has created thousands of job opportunities that did not exist
                 a decade ago. Today, esports organisations employ coaches, analysts, marketing managers,
                 content producers, event organisers, and many more professionals who help teams succeed both
                 in-game and as businesses.
@@ -316,7 +316,7 @@ export default function Home() {
               <p className="text-lg text-gray-400">
                 Whether you are a skilled player dreaming of going pro, a creative looking to build a content
                 career, or a business professional seeking opportunities in gaming, the esports industry has
-                a place for you. Our job board connects talented individuals with the organisations shaping
+                a place for you. The <a href="https://britishesports.org" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline">British Esports Federation</a> and organisations like <a href="https://esic.gg" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline">ESIC</a> are helping professionalise the industry. Our <Link href="/" className="text-cyan-400 hover:underline">esports jobs</Link> board connects talented individuals with the organisations shaping
                 the future of competitive gaming.
               </p>
             </div>
@@ -495,7 +495,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <p className="text-gray-400 uppercase tracking-wider text-sm">
-              Jobs from leading esports organisations
+              <Link href="/" className="hover:text-cyan-400">Esports jobs</Link> from leading organisations
             </p>
           </div>
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
@@ -507,6 +507,34 @@ export default function Home() {
                 {company}
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Industry Resources */}
+      <section className="py-16 bg-[#0a0a0f]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10">
+            <h2 className="text-2xl font-bold mb-4">Esports Industry Resources</h2>
+            <p className="text-gray-400">Trusted organisations supporting the <Link href="/" className="text-cyan-400 hover:underline">esports jobs</Link> ecosystem</p>
+          </div>
+          <div className="grid md:grid-cols-4 gap-6">
+            <a href="https://britishesports.org" target="_blank" rel="noopener noreferrer" className="bg-gray-900/50 border border-gray-700 rounded-xl p-6 hover:border-cyan-500/50 transition-all text-center">
+              <h3 className="font-bold text-white mb-2">British Esports</h3>
+              <p className="text-gray-400 text-sm">The national body for esports in the UK</p>
+            </a>
+            <a href="https://ukie.org.uk" target="_blank" rel="noopener noreferrer" className="bg-gray-900/50 border border-gray-700 rounded-xl p-6 hover:border-cyan-500/50 transition-all text-center">
+              <h3 className="font-bold text-white mb-2">UKIE</h3>
+              <p className="text-gray-400 text-sm">UK games industry trade body</p>
+            </a>
+            <a href="https://esic.gg" target="_blank" rel="noopener noreferrer" className="bg-gray-900/50 border border-gray-700 rounded-xl p-6 hover:border-cyan-500/50 transition-all text-center">
+              <h3 className="font-bold text-white mb-2">ESIC</h3>
+              <p className="text-gray-400 text-sm">Esports Integrity Commission</p>
+            </a>
+            <a href="https://www.riotgames.com/en/work-with-us" target="_blank" rel="noopener noreferrer" className="bg-gray-900/50 border border-gray-700 rounded-xl p-6 hover:border-cyan-500/50 transition-all text-center">
+              <h3 className="font-bold text-white mb-2">Riot Games Careers</h3>
+              <p className="text-gray-400 text-sm">Jobs at League of Legends publisher</p>
+            </a>
           </div>
         </div>
       </section>
@@ -725,10 +753,10 @@ export default function Home() {
                 <div className="w-12 h-12 rounded bg-gradient-to-br from-cyan-400 to-purple-600 flex items-center justify-center font-bold text-2xl">
                   E
                 </div>
-                <span className="text-2xl font-bold">ESPORTS JOBS</span>
+                <Link href="/" className="text-2xl font-bold hover:text-cyan-400 transition-colors">ESPORTS JOBS</Link>
               </div>
               <p className="text-gray-400 mb-4">
-                The leading job board connecting gaming professionals with esports career opportunities.
+                The leading <Link href="/" className="text-cyan-400 hover:underline">esports jobs</Link> board connecting gaming professionals with career opportunities.
               </p>
               <p className="text-gray-500 text-sm">
                 Find your dream job in competitive gaming, content creation, and esports management.
@@ -737,23 +765,23 @@ export default function Home() {
             <div>
               <h4 className="font-bold text-white mb-4">Job Categories</h4>
               <ul className="space-y-2 text-gray-400 text-sm">
-                <li><a href="#" className="hover:text-cyan-400 transition-colors">Pro Player Jobs</a></li>
-                <li><a href="#" className="hover:text-cyan-400 transition-colors">Coaching Jobs</a></li>
-                <li><a href="#" className="hover:text-cyan-400 transition-colors">Content Creator Jobs</a></li>
-                <li><a href="#" className="hover:text-cyan-400 transition-colors">Broadcast Jobs</a></li>
-                <li><a href="#" className="hover:text-cyan-400 transition-colors">Event Jobs</a></li>
-                <li><a href="#" className="hover:text-cyan-400 transition-colors">Marketing Jobs</a></li>
+                <li><Link href="/#categories" className="hover:text-cyan-400 transition-colors">Pro Player Jobs</Link></li>
+                <li><Link href="/#categories" className="hover:text-cyan-400 transition-colors">Coaching Jobs</Link></li>
+                <li><Link href="/#categories" className="hover:text-cyan-400 transition-colors">Content Creator Jobs</Link></li>
+                <li><Link href="/#categories" className="hover:text-cyan-400 transition-colors">Broadcast Jobs</Link></li>
+                <li><Link href="/#categories" className="hover:text-cyan-400 transition-colors">Event Jobs</Link></li>
+                <li><Link href="/#categories" className="hover:text-cyan-400 transition-colors">Marketing Jobs</Link></li>
               </ul>
             </div>
             <div>
-              <h4 className="font-bold text-white mb-4">Resources</h4>
+              <h4 className="font-bold text-white mb-4">Industry Resources</h4>
               <ul className="space-y-2 text-gray-400 text-sm">
-                <li><a href="#" className="hover:text-cyan-400 transition-colors">Career Guide</a></li>
-                <li><a href="#" className="hover:text-cyan-400 transition-colors">Salary Guide</a></li>
-                <li><a href="#" className="hover:text-cyan-400 transition-colors">Interview Tips</a></li>
-                <li><a href="#" className="hover:text-cyan-400 transition-colors">Resume Templates</a></li>
-                <li><a href="#" className="hover:text-cyan-400 transition-colors">Industry News</a></li>
-                <li><a href="#" className="hover:text-cyan-400 transition-colors">Blog</a></li>
+                <li><a href="https://britishesports.org" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">British Esports</a></li>
+                <li><a href="https://ukie.org.uk" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">UKIE</a></li>
+                <li><a href="https://esic.gg" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">ESIC</a></li>
+                <li><a href="https://www.theesa.com" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">ESA</a></li>
+                <li><a href="https://hitmarker.net" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">Hitmarker</a></li>
+                <li><a href="https://www.riotgames.com/en/work-with-us" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">Riot Careers</a></li>
               </ul>
             </div>
             <div>
@@ -771,7 +799,7 @@ export default function Home() {
           </div>
 
           <div className="text-center text-gray-500 text-sm">
-            <p>&copy; 2025 Esports Jobs. All rights reserved.</p>
+            <p>&copy; 2025 <Link href="/" className="hover:text-cyan-400">Esports Jobs</Link>. All rights reserved.</p>
             <p className="mt-2">
               <a href="#" className="hover:text-gray-400">Privacy Policy</a>
               {" · "}
