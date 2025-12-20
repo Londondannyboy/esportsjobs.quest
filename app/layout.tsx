@@ -64,15 +64,6 @@ const jsonLd = {
       }
     },
     {
-      "@type": "JobPosting",
-      "@id": "https://esportsjobs.quest/#jobposting-example",
-      title: "Esports Jobs Available",
-      description: "Browse hundreds of esports jobs including pro player positions, coaching roles, content creation, tournament organisation, and esports management opportunities.",
-      employmentType: ["FULL_TIME", "PART_TIME", "CONTRACTOR"],
-      industry: "Esports and Gaming",
-      occupationalCategory: "Gaming Industry"
-    },
-    {
       "@type": "FAQPage",
       mainEntity: [
         {
