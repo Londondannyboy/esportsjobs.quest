@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { UnifiedHeader } from "./components/UnifiedHeader";
+import { UnifiedFooter } from "./components/UnifiedFooter";
 
 const jobCategories = [
   {
@@ -193,37 +195,17 @@ export default function Home() {
         </div>
 
         {/* Navigation */}
-        <nav className="absolute top-0 left-0 right-0 z-50 border-b border-cyan-500/20 backdrop-blur-md bg-black/30">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-            <div className="flex items-center justify-between">
-              <a href="/" className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded bg-gradient-to-br from-cyan-400 to-purple-600 flex items-center justify-center font-bold text-xl">
-                  E
-                </div>
-                <span className="text-xl font-bold neon-text">
-                  ESPORTS JOBS
-                </span>
-              </a>
-              <div className="hidden md:flex items-center gap-6">
-                <a href="#jobs" className="text-gray-300 hover:text-cyan-400 transition-colors">
-                  Browse Jobs
-                </a>
-                <a href="#categories" className="text-gray-300 hover:text-cyan-400 transition-colors">
-                  Categories
-                </a>
-                <a href="#careers" className="text-gray-300 hover:text-cyan-400 transition-colors">
-                  Career Paths
-                </a>
-                <a href="#faq" className="text-gray-300 hover:text-cyan-400 transition-colors">
-                  FAQ
-                </a>
-                <Link href="/contact" className="bg-cyan-500 hover:bg-cyan-400 text-black font-bold py-2 px-6 rounded btn-shine transition-all">
-                  Post a Job
-                </Link>
-              </div>
-            </div>
-          </div>
-        </nav>
+        <UnifiedHeader
+          activeSite="jobs"
+          siteNavItems={[
+            { label: 'Browse Jobs', href: '#jobs' },
+            { label: 'Categories', href: '#categories' },
+            { label: 'Career Paths', href: '#careers' },
+            { label: 'FAQ', href: '#faq' },
+          ]}
+          ctaLabel="Post a Job"
+          ctaHref="/contact"
+        />
 
         {/* Hero Content */}
         <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
@@ -745,71 +727,31 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#050508] border-t border-gray-800 py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
-            <div className="md:col-span-2 lg:col-span-2">
-              <div className="flex items-center gap-3 mb-6">
-                <div className="w-12 h-12 rounded bg-gradient-to-br from-cyan-400 to-purple-600 flex items-center justify-center font-bold text-2xl">
-                  E
-                </div>
-                <Link href="/" className="text-2xl font-bold hover:text-cyan-400 transition-colors">ESPORTS JOBS</Link>
-              </div>
-              <p className="text-gray-400 mb-4">
-                The leading <Link href="/" className="text-cyan-400 hover:underline">esports jobs</Link> board connecting gaming professionals with career opportunities.
-              </p>
-              <p className="text-gray-500 text-sm">
-                Find your dream job in competitive gaming, content creation, and esports management.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-bold text-white mb-4">Job Categories</h4>
-              <ul className="space-y-2 text-gray-400 text-sm">
-                <li><Link href="/#categories" className="hover:text-cyan-400 transition-colors">Pro Player Jobs</Link></li>
-                <li><Link href="/#categories" className="hover:text-cyan-400 transition-colors">Coaching Jobs</Link></li>
-                <li><Link href="/#categories" className="hover:text-cyan-400 transition-colors">Content Creator Jobs</Link></li>
-                <li><Link href="/#categories" className="hover:text-cyan-400 transition-colors">Broadcast Jobs</Link></li>
-                <li><Link href="/#categories" className="hover:text-cyan-400 transition-colors">Event Jobs</Link></li>
-                <li><Link href="/#categories" className="hover:text-cyan-400 transition-colors">Marketing Jobs</Link></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold text-white mb-4">Industry Resources</h4>
-              <ul className="space-y-2 text-gray-400 text-sm">
-                <li><a href="https://britishesports.org" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">British Esports</a></li>
-                <li><a href="https://ukie.org.uk" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">UKIE</a></li>
-                <li><a href="https://esic.gg" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">ESIC</a></li>
-                <li><a href="https://www.theesa.com" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">ESA</a></li>
-                <li><a href="https://hitmarker.net" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">Hitmarker</a></li>
-                <li><a href="https://www.riotgames.com/en/work-with-us" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">Riot Careers</a></li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="font-bold text-white mb-4">Contact</h4>
-              <ul className="space-y-2 text-gray-400 text-sm">
-                <li>📧 hello@esportsjobs.quest</li>
-                <li>📍 London, United Kingdom</li>
-              </ul>
-              <div className="mt-6">
-                <Link href="/contact" className="inline-block bg-cyan-500 hover:bg-cyan-400 text-black font-bold py-2 px-4 rounded text-sm transition-all">
-                  Post a Job
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          <div className="text-center text-gray-500 text-sm">
-            <p>&copy; 2025 <Link href="/" className="hover:text-cyan-400">Esports Jobs</Link>. All rights reserved.</p>
-            <p className="mt-2">
-              <a href="#" className="hover:text-gray-400">Privacy Policy</a>
-              {" · "}
-              <a href="#" className="hover:text-gray-400">Terms of Service</a>
-              {" · "}
-              <a href="#" className="hover:text-gray-400">Cookie Policy</a>
-            </p>
-          </div>
-        </div>
-      </footer>
+      <UnifiedFooter
+        activeSite="jobs"
+        siteSpecificSections={[
+          {
+            title: 'Job Categories',
+            links: [
+              { label: 'Pro Player Jobs', href: '/#categories' },
+              { label: 'Coaching Jobs', href: '/#categories' },
+              { label: 'Content Creator Jobs', href: '/#categories' },
+              { label: 'Broadcast Jobs', href: '/#categories' },
+              { label: 'Event Jobs', href: '/#categories' },
+              { label: 'Marketing Jobs', href: '/#categories' },
+            ],
+          },
+          {
+            title: 'Career Paths',
+            links: [
+              { label: 'Competition Path', href: '/#careers' },
+              { label: 'Content Path', href: '/#careers' },
+              { label: 'Broadcast Path', href: '/#careers' },
+              { label: 'Business Path', href: '/#careers' },
+            ],
+          },
+        ]}
+      />
     </main>
   );
 }
