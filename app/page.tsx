@@ -2,6 +2,7 @@ import Link from "next/link";
 import { UnifiedHeader } from "./components/UnifiedHeader";
 import { UnifiedFooter } from "./components/UnifiedFooter";
 import { CrossLinkBanner } from "./components/CrossLinkBanner";
+import { NewsSection } from "./components/NewsSection";
 
 const jobCategories = [
   {
@@ -655,6 +656,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Latest Esports News */}
+      <NewsSection />
 
       {/* Cross-Site Promotion with SEO Keywords */}
       <section className="py-16 bg-[#0a0a0f]">
