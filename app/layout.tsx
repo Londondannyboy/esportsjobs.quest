@@ -12,7 +12,7 @@ const jsonLd = {
       "@id": "https://esportsjobs.quest/#website",
       name: "Esports Jobs",
       url: "https://esportsjobs.quest",
-      description: "Find esports jobs and gaming careers. Browse job listings for pro players, coaches, content creators, tournament organisers, and more.",
+      description: "Leading esports recruitment agency connecting talent with esports jobs. We recruit pro players, coaches, content creators, and gaming professionals.",
       publisher: {
         "@id": "https://esportsjobs.quest/#organization"
       },
@@ -30,12 +30,13 @@ const jsonLd = {
       "@id": "https://esportsjobs.quest/#organization",
       name: "Esports Jobs",
       url: "https://esportsjobs.quest",
-      description: "The leading esports job board connecting gaming professionals with opportunities in competitive gaming, streaming, content creation, and esports organisations.",
+      description: "The UK's leading esports recruitment agency connecting gaming professionals with esports jobs in competitive gaming, streaming, content creation, and esports organisations.",
       areaServed: {
         "@type": "Country",
         name: "United Kingdom",
       },
       knowsAbout: [
+        "Esports Recruitment Agency",
         "Esports Jobs",
         "Gaming Careers",
         "Esports Recruitment",
@@ -50,8 +51,8 @@ const jsonLd = {
       "@type": "WebPage",
       "@id": "https://esportsjobs.quest/#webpage",
       url: "https://esportsjobs.quest",
-      name: "Esports Jobs | Find Gaming Careers & Esports Opportunities 2025",
-      description: "Browse the latest esports jobs and gaming career opportunities. Find roles in pro gaming, coaching, content creation, esports management, and more.",
+      name: "Esports Recruitment Agency | Esports Jobs UK",
+      description: "Leading esports recruitment agency connecting talent with esports jobs. We recruit pro players, coaches, content creators, and esports professionals for top gaming organisations.",
       isPartOf: {
         "@id": "https://esportsjobs.quest/#website"
       },
@@ -147,16 +148,17 @@ const jsonLd = {
 };
 
 export const metadata: Metadata = {
-  title: "Esports Jobs | Find Gaming Careers & Esports Opportunities 2025",
+  title: "Esports Recruitment Agency | Esports Jobs UK",
   description:
-    "Find esports jobs and gaming careers. Browse job listings for pro players, coaches, content creators, tournament organisers, casters, and esports management roles. Your gateway to the gaming industry.",
+    "Leading esports recruitment agency connecting talent with esports jobs. We recruit pro players, coaches, content creators, and esports professionals for top gaming organisations.",
   authors: [{ name: "Esports Jobs" }],
   keywords: [
+    "esports recruitment agency",
     "esports jobs",
+    "esports recruitment",
     "esports careers",
     "gaming jobs",
     "esports job board",
-    "esports recruitment",
     "pro gaming jobs",
     "esports coach jobs",
     "content creator jobs",
@@ -170,9 +172,9 @@ export const metadata: Metadata = {
   ],
   robots: "index, follow",
   openGraph: {
-    title: "Esports Jobs | Find Gaming Careers & Esports Opportunities 2025",
+    title: "Esports Recruitment Agency | Esports Jobs UK",
     description:
-      "Find esports jobs and gaming careers. Browse job listings for pro players, coaches, content creators, tournament organisers, and more.",
+      "Leading esports recruitment agency connecting talent with esports jobs. We recruit pro players, coaches, content creators, and esports professionals.",
     siteName: "Esports Jobs",
     locale: "en_GB",
     images: [
@@ -180,7 +182,7 @@ export const metadata: Metadata = {
         url: "https://esportsjobs.quest/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Esports Jobs - Gaming Career Opportunities",
+        alt: "Esports Recruitment Agency - Esports Jobs and Gaming Careers",
         type: "image/png",
       },
     ],
@@ -188,9 +190,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Esports Jobs | Find Gaming Careers",
+    title: "Esports Recruitment Agency | Esports Jobs UK",
     description:
-      "Find esports jobs and gaming careers. Browse job listings for pro players, coaches, and more.",
+      "Leading esports recruitment agency connecting talent with esports jobs. We recruit pro players, coaches, and esports professionals.",
     images: ["https://esportsjobs.quest/og-image.png"],
   },
   icons: {

@@ -189,6 +189,8 @@ export default function Home() {
             loop
             playsInline
             className="w-full h-full object-cover"
+            aria-label="Esports recruitment agency connecting talent with esports jobs"
+            title="Esports Recruitment Agency - Find Esports Jobs"
           >
             <source src="/hero-3.mp4" type="video/mp4" />
           </video>
@@ -212,17 +214,24 @@ export default function Home() {
         {/* Hero Content */}
         <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
           <div className="inline-block mb-6 px-4 py-2 rounded-full border border-cyan-500/50 bg-cyan-500/10 text-cyan-400 text-sm font-medium">
-            🎮 The #1 Esports Job Board
+            <img
+              src="/icon.svg"
+              alt="Esports recruitment agency logo"
+              className="inline-block w-5 h-5 mr-2 align-middle"
+              width="20"
+              height="20"
+            />
+            The #1 Esports Recruitment Agency
           </div>
           <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-black mb-6 leading-tight">
-            <span className="block">FIND YOUR DREAM</span>
+            <span className="block">ESPORTS RECRUITMENT</span>
             <span className="block bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-              ESPORTS JOB
+              AGENCY
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-            Browse thousands of esports jobs from top gaming organisations.
-            Find roles in pro gaming, coaching, content creation, broadcasting, and esports management.
+            The UK&apos;s leading esports recruitment agency connecting gaming talent with top organisations.
+            Browse esports jobs in pro gaming, coaching, content creation, and esports management.
           </p>
 
           {/* Search Bar */}
@@ -282,25 +291,23 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-black mb-8 text-center">
-              What are <span className="text-cyan-400">Esports Jobs</span>?
+              Your Esports Recruitment Agency for <span className="text-cyan-400">Gaming Careers</span>
             </h2>
             <div className="prose prose-lg prose-invert max-w-none">
               <p className="text-xl text-gray-300 mb-6">
-                <Link href="/" className="text-cyan-400 hover:underline">Esports jobs</Link> encompass all career opportunities within the competitive gaming industry.
+                As a specialist <Link href="/" className="text-cyan-400 hover:underline">esports recruitment agency</Link>, we connect talented professionals with exciting <Link href="/" className="text-cyan-400 hover:underline">esports jobs</Link> across the competitive gaming industry.
                 From professional players competing for million-dollar prize pools to content creators building
-                massive audiences, the esports industry offers diverse career paths for gaming enthusiasts.
+                massive audiences, our esports recruitment agency helps you find your perfect role.
               </p>
               <p className="text-lg text-gray-400 mb-6">
                 The esports industry has transformed from basement LAN parties into a $1.8 billion global
-                phenomenon, according to data from <a href="https://ukie.org.uk" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline">UKIE</a>, the UK games industry trade body. This explosive growth has created thousands of job opportunities that did not exist
+                phenomenon, according to data from <a href="https://ukie.org.uk" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline">UKIE</a>, the UK games industry trade body. This explosive growth has created thousands of esports jobs that did not exist
                 a decade ago. Today, esports organisations employ coaches, analysts, marketing managers,
-                content producers, event organisers, and many more professionals who help teams succeed both
-                in-game and as businesses.
+                content producers, event organisers, and many more professionals. Our esports recruitment agency works with these organisations to fill their talent needs.
               </p>
               <p className="text-lg text-gray-400">
                 Whether you are a skilled player dreaming of going pro, a creative looking to build a content
-                career, or a business professional seeking opportunities in gaming, the esports industry has
-                a place for you. The <a href="https://britishesports.org" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline">British Esports Federation</a> and organisations like <a href="https://esic.gg" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline">ESIC</a> are helping professionalise the industry. Our <Link href="/" className="text-cyan-400 hover:underline">esports jobs</Link> board connects talented individuals with the organisations shaping
+                career, or a business professional seeking opportunities in gaming, our esports recruitment agency is here to help. The <a href="https://britishesports.org" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline">British Esports Federation</a> and organisations like <a href="https://esic.gg" target="_blank" rel="noopener noreferrer" className="text-cyan-400 hover:underline">ESIC</a> are helping professionalise the industry. Browse our <Link href="/" className="text-cyan-400 hover:underline">esports jobs</Link> board to find opportunities at the organisations shaping
                 the future of competitive gaming.
               </p>
             </div>
@@ -577,6 +584,8 @@ export default function Home() {
             playsInline
             preload="metadata"
             className="w-full h-full object-cover opacity-30"
+            aria-label="Esports jobs and gaming careers background"
+            title="Browse Esports Jobs from Our Recruitment Agency"
           >
             <source src="/hero-3.mp4" type="video/mp4" />
           </video>
@@ -584,10 +593,10 @@ export default function Home() {
         </div>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <h2 className="text-4xl md:text-5xl font-black mb-6">
-            Ready to Start Your Esports Career?
+            Start Your Esports Career with Our Recruitment Agency
           </h2>
           <p className="text-xl text-gray-200 mb-8">
-            Join thousands of gaming professionals who found their dream esports jobs through our platform.
+            Join thousands of gaming professionals who found their dream esports jobs through our esports recruitment agency.
             Browse the latest opportunities and take the first step towards your career in competitive gaming.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -614,6 +623,8 @@ export default function Home() {
                   playsInline
                   preload="metadata"
                   className="w-full h-full object-cover"
+                  aria-label="Esports recruitment agency team connecting professionals with esports jobs"
+                  title="Esports Recruitment Agency - Gaming Industry Experts"
                 >
                   <source src="/hero-5.mp4" type="video/mp4" />
                 </video>
@@ -621,14 +632,14 @@ export default function Home() {
             </div>
             <div>
               <h2 className="text-4xl md:text-5xl font-black mb-6">
-                Built by <span className="text-purple-400">Esports Professionals</span>
+                Why Choose Our <span className="text-purple-400">Esports Recruitment Agency</span>
               </h2>
               <p className="text-xl text-gray-300 mb-4">
-                We&apos;re an esports network with deep connections across the competitive gaming industry.
+                We&apos;re a specialist esports recruitment agency with deep connections across the competitive gaming industry.
               </p>
               <p className="text-lg text-gray-400 mb-6">
-                Our team has worked with tournament organisers, pro teams, content creators, and gaming companies.
-                We understand what employers are looking for and help candidates present themselves effectively.
+                Our esports recruitment agency has worked with tournament organisers, pro teams, content creators, and gaming companies.
+                We understand what employers are looking for and help candidates land their ideal esports jobs.
               </p>
               <ul className="space-y-4 text-gray-400 mb-8">
                 <li className="flex items-start gap-3">
