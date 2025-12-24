@@ -24,7 +24,7 @@ const skills = ["Digital marketing", "Social media expertise", "Content creation
 export default function EsportsMarketingCareers() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
-      <UnifiedHeader />
+      <UnifiedHeader activeSite="jobs" />
       <main>
         <section className="relative py-20 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-pink-600/20 via-transparent to-violet-600/20" />
@@ -90,7 +90,7 @@ export default function EsportsMarketingCareers() {
           </div>
         </section>
       </main>
-      <UnifiedFooter />
+      <UnifiedFooter activeSite="jobs" />
     </div>
   );
 }

@@ -236,7 +236,7 @@ export default function GamingJobsUK() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
-      <UnifiedHeader />
+      <UnifiedHeader activeSite="jobs" />
 
       <main>
         {/* Hero Section */}
@@ -585,7 +585,7 @@ export default function GamingJobsUK() {
         </section>
       </main>
 
-      <UnifiedFooter />
+      <UnifiedFooter activeSite="jobs" />
     </div>
   );
 }

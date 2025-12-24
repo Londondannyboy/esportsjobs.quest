@@ -90,7 +90,7 @@ const faqs = [
 export default function HowToGetIntoEsports() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
-      <UnifiedHeader />
+      <UnifiedHeader activeSite="jobs" />
       <main>
         <section className="relative py-20 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-violet-600/20 via-transparent to-cyan-600/20" />
@@ -195,7 +195,7 @@ export default function HowToGetIntoEsports() {
           </div>
         </section>
       </main>
-      <UnifiedFooter />
+      <UnifiedFooter activeSite="jobs" />
     </div>
   );
 }

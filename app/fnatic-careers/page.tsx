@@ -30,7 +30,7 @@ const facts = [
 export default function FnaticCareers() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
-      <UnifiedHeader />
+      <UnifiedHeader activeSite="jobs" />
       <main>
         <section className="relative py-20 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-orange-600/20 via-transparent to-slate-900" />
@@ -109,7 +109,7 @@ export default function FnaticCareers() {
           </div>
         </section>
       </main>
-      <UnifiedFooter />
+      <UnifiedFooter activeSite="jobs" />
     </div>
   );
 }
