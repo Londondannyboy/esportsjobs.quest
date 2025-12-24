@@ -724,6 +724,79 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Career Guides & Resources Section */}
+      <section id="guides" className="py-24 bg-gradient-to-b from-[#0a0a12] to-[#0d0d15]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-black mb-4">
+              Career <span className="text-cyan-400">Guides & Resources</span>
+            </h2>
+            <p className="text-xl text-gray-400">
+              Comprehensive guides to help you break into and advance in the esports industry
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            {/* Pillar Pages */}
+            <Link href="/esports-jobs-uk" className="p-6 rounded-xl bg-gradient-to-br from-purple-900/30 to-cyan-900/30 border border-purple-500/20 hover:border-purple-500/50 transition-all group">
+              <h3 className="text-lg font-bold text-white mb-2 group-hover:text-purple-400">Esports Jobs UK</h3>
+              <p className="text-gray-400 text-sm">Complete guide to finding esports jobs across the United Kingdom.</p>
+            </Link>
+            <Link href="/gaming-jobs-uk" className="p-6 rounded-xl bg-gradient-to-br from-green-900/30 to-cyan-900/30 border border-green-500/20 hover:border-green-500/50 transition-all group">
+              <h3 className="text-lg font-bold text-white mb-2 group-hover:text-green-400">Gaming Jobs UK</h3>
+              <p className="text-gray-400 text-sm">All gaming industry jobs from development to esports.</p>
+            </Link>
+            <Link href="/esports-careers" className="p-6 rounded-xl bg-gradient-to-br from-amber-900/30 to-orange-900/30 border border-amber-500/20 hover:border-amber-500/50 transition-all group">
+              <h3 className="text-lg font-bold text-white mb-2 group-hover:text-amber-400">Esports Careers</h3>
+              <p className="text-gray-400 text-sm">All career pathways in professional esports.</p>
+            </Link>
+            <Link href="/esports-recruitment" className="p-6 rounded-xl bg-gradient-to-br from-cyan-900/30 to-blue-900/30 border border-cyan-500/20 hover:border-cyan-500/50 transition-all group">
+              <h3 className="text-lg font-bold text-white mb-2 group-hover:text-cyan-400">Recruitment Services</h3>
+              <p className="text-gray-400 text-sm">Professional esports recruitment and talent acquisition.</p>
+            </Link>
+          </div>
+
+          <div className="grid md:grid-cols-3 lg:grid-cols-6 gap-4">
+            <Link href="/entry-level-esports-jobs-uk" className="p-4 rounded-lg bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-purple-500/50 transition-all text-center">
+              <span className="text-gray-300 text-sm">Entry Level Jobs</span>
+            </Link>
+            <Link href="/esports-jobs-london" className="p-4 rounded-lg bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-purple-500/50 transition-all text-center">
+              <span className="text-gray-300 text-sm">Jobs in London</span>
+            </Link>
+            <Link href="/esports-jobs-remote" className="p-4 rounded-lg bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-purple-500/50 transition-all text-center">
+              <span className="text-gray-300 text-sm">Remote Jobs</span>
+            </Link>
+            <Link href="/gaming-tester-jobs-uk" className="p-4 rounded-lg bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-purple-500/50 transition-all text-center">
+              <span className="text-gray-300 text-sm">QA Tester Jobs</span>
+            </Link>
+            <Link href="/how-to-get-into-esports" className="p-4 rounded-lg bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-purple-500/50 transition-all text-center">
+              <span className="text-gray-300 text-sm">How to Get In</span>
+            </Link>
+            <Link href="/esports-salary-guide-uk" className="p-4 rounded-lg bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-purple-500/50 transition-all text-center">
+              <span className="text-gray-300 text-sm">Salary Guide</span>
+            </Link>
+            <Link href="/esports-coach-careers" className="p-4 rounded-lg bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-purple-500/50 transition-all text-center">
+              <span className="text-gray-300 text-sm">Coach Careers</span>
+            </Link>
+            <Link href="/esports-analyst-careers" className="p-4 rounded-lg bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-purple-500/50 transition-all text-center">
+              <span className="text-gray-300 text-sm">Analyst Careers</span>
+            </Link>
+            <Link href="/esports-broadcaster-careers" className="p-4 rounded-lg bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-purple-500/50 transition-all text-center">
+              <span className="text-gray-300 text-sm">Broadcaster Careers</span>
+            </Link>
+            <Link href="/esports-marketing-careers" className="p-4 rounded-lg bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-purple-500/50 transition-all text-center">
+              <span className="text-gray-300 text-sm">Marketing Careers</span>
+            </Link>
+            <Link href="/top-esports-companies-uk" className="p-4 rounded-lg bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-purple-500/50 transition-all text-center">
+              <span className="text-gray-300 text-sm">Top Companies</span>
+            </Link>
+            <Link href="/esports-lecturer-jobs" className="p-4 rounded-lg bg-gray-800/50 hover:bg-gray-800 border border-gray-700 hover:border-purple-500/50 transition-all text-center">
+              <span className="text-gray-300 text-sm">Lecturer Jobs</span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section id="faq" className="py-24 bg-[#0d0d15]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -800,23 +873,36 @@ export default function Home() {
         activeSite="jobs"
         siteSpecificSections={[
           {
-            title: 'Job Categories',
+            title: 'Job Guides',
             links: [
-              { label: 'Pro Player Jobs', href: '/#categories' },
-              { label: 'Coaching Jobs', href: '/#categories' },
-              { label: 'Content Creator Jobs', href: '/#categories' },
-              { label: 'Broadcast Jobs', href: '/#categories' },
-              { label: 'Event Jobs', href: '/#categories' },
-              { label: 'Marketing Jobs', href: '/#categories' },
+              { label: 'Esports Jobs UK', href: '/esports-jobs-uk' },
+              { label: 'Gaming Jobs UK', href: '/gaming-jobs-uk' },
+              { label: 'Entry Level Jobs', href: '/entry-level-esports-jobs-uk' },
+              { label: 'Jobs in London', href: '/esports-jobs-london' },
+              { label: 'Remote Jobs', href: '/esports-jobs-remote' },
+              { label: 'QA Tester Jobs', href: '/gaming-tester-jobs-uk' },
             ],
           },
           {
             title: 'Career Paths',
             links: [
-              { label: 'Competition Path', href: '/#careers' },
-              { label: 'Content Path', href: '/#careers' },
-              { label: 'Broadcast Path', href: '/#careers' },
-              { label: 'Business Path', href: '/#careers' },
+              { label: 'Esports Careers', href: '/esports-careers' },
+              { label: 'Coach Careers', href: '/esports-coach-careers' },
+              { label: 'Analyst Careers', href: '/esports-analyst-careers' },
+              { label: 'Broadcaster Careers', href: '/esports-broadcaster-careers' },
+              { label: 'Marketing Careers', href: '/esports-marketing-careers' },
+              { label: 'How to Get Into Esports', href: '/how-to-get-into-esports' },
+            ],
+          },
+          {
+            title: 'Resources',
+            links: [
+              { label: 'Salary Guide UK', href: '/esports-salary-guide-uk' },
+              { label: 'Top Companies UK', href: '/top-esports-companies-uk' },
+              { label: 'Fnatic Careers', href: '/fnatic-careers' },
+              { label: 'British Esports Jobs', href: '/british-esports-jobs' },
+              { label: 'Recruitment Services', href: '/esports-recruitment' },
+              { label: 'Recruitment Agency', href: '/esports-recruitment-agency' },
             ],
           },
         ]}
